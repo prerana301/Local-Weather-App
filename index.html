@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather App</title>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row h-100">
+            <div class="info-box col-lg-6 col-xs-12 my-auto">
+                <button class="button selected" id="toggleTempButton">&deg;F</button>
+                <h1 id="location"></h1>
+                <div class="row h-100">
+                    <div class="col-12 text-center my-auto">
+                        <span id="temp">...</span>
+                        <span class="symbol">&deg;</span>
+                    </div>
+                    <div class="col-12 text-center my-auto">
+                        <canvas id="icon"></canvas>
+                    </div>
+                    <div class="col-12 text-center my-auto">
+                        <span id="conditions">loading</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

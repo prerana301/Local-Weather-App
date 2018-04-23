@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.info-box {
+  color: #324d5c;
+  background: #efefef;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 2.6em;
+  padding-bottom: 2.6em;
+  font-weight: 700;
+  position: relative;
+}
+
+#location {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#temp {
+  text-align: center;
+  display: inline-block;
+  font-size: 100px;
+}
+
+.symbol {
+  font-size: 100px;
+}
+
+#conditions {
+  font-size: 60px;
+}
+
+/*---------------Button----------------*/
+.button {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  color: #324d5c;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.3em;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+}
+
+.button:hover {
+  transform: scale(0.9);
+}
+
+.button:focus {
+  outline: none;
+}
+
+/*---------------Media Queries----------------*/
+@media (min-width: 576px) {
+  .info-box {
+    border-radius: 0.3em;
+  }
+}
